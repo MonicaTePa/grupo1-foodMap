@@ -16,9 +16,11 @@ body{
 }
 
 header{
+    position: fixed;  
     background-color: #EDA537;
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 #img1{
