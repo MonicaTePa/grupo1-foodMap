@@ -60,7 +60,7 @@ class Restaurant{
     initializeRestaurant(){
        let restaurantItem = document.createElement('div');
        restaurantItem.className = "restaurant-item";
-       restaurantItem.onclick = function(){
+       restaurantItem.onclick = function() {
             window.open("../../mapas.html");                        
        }
 
