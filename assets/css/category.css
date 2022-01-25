@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F4EDDA;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+header{ 
+    position: fixed;    
+    z-index: 10;
+    top:0; 
+}
+
+.category-menu{
+    height:auto;
+    padding: 5px;
+    color: white;   
+    top: 100px;
+    position: fixed;
+    text-align: center;
+    width:80%;
+    border: 1px solid #f4edda;
+    z-index: 10;
+}
+
+.category-menu:hover li{
+    cursor: pointer;
+}
+
+main{ 
+    margin-top: 120px;      
+    font-family: 'Montserrat', sans-serif;
+    border: #F4EDDA solid 1px;         
+    height: 60%;
+    background-color: #F4EDDA;
+}
+
+main .category-container{
+    width: 100%;
+    height: auto; 
+    box-sizing: border-box;     
+    font-size: 12px;      
+}
+
+main .category-title{
+     margin-top: 1.5em;
+     margin-bottom: 0.5em;
+     text-align: center;
+     font-family: 'Kaushan Script', cursive;  
+     font-size: 2em;     
+}
+
+main .category-container .restaurant-item{   
+    background-color: white;
+    margin: 5px;    
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;         
+}
+
+.restaurant-item:hover{
+    border:#DE6E2F solid 1px;
+    cursor: default;
+}
+
+@media screen and (max-width:349px) {
+    .category-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        margin-left: 0;
+        margin-right:0;
+    }
+
+    .restaurant-item{
+        width: 100%;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .category-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        margin-left: 0;
+        margin-right:0;
+    }
+
+    .restaurant-item{
+        width: 320px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width:821px) {
+    .category-container{
+        display: grid;     
+        grid-template-columns: repeat(2,1fr);  
+    }
+
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .restaurant-item{
+        width: 350px;
+        height: 120px;
+    }
+
+    .restaurant-item{
+        width: 350px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .category-container{
+        display: grid;     
+        grid-template-columns: repeat(3,1fr);  
+    }
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .restaurant-item{
+        width: 350px;
+        height: 120px;
+    }
+    
+}
+
+@media screen and (min-width:1355px) {
+    .category-container{
+        display: grid;     
+        grid-template-columns: repeat(3,1fr);  
+    }
+    main{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .restaurant-item{
+        width: 350px;
+        height: 120px;
+    }
+   
+}
+
+main .category-container .restaurant-item .restaurant-img-container{
+    height: 90%;
+    width: 33%;
+    background-color: yellow;
+}
+
+main .category-container .restaurant-item .restaurant-img-container .restaurant-img {
+    width: 100%;
+    height: 100%;   
+}
+
+main .category-container .restaurant-item .restaurant-img-container .restaurant-score{
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    position:relative;   
+    top: -100%;
+    left: 0;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #DE6E2F;
+    border-radius: 6px;
+    background-color: #f0b237;
+}
+
+main .category-container .restaurant-item .restaurant-img-container .restaurant-score .scores-heart-icon{
+    width:20px;
+    height: 20px;     
+    margin-left: 5px; 
+}
+
+main .category-container .restaurant-item .restaurant-img-container .restaurant-score p{
+    color: black;
+    font-weight: bolder;
+    margin-left: 5px;  
+    margin-right: 5px;      
+}
+
+main .category-container .restaurant-item .restaurant-info{
+    height: 90%;
+    width:63%;   
+    padding-left:2%;
+    padding-right:2%;        
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.restaurant-info .restaurant-name{
+    font-weight: bolder;
+}
+
+.restaurant-info div .restaurant-info-subtitle{
+    font-size: 10px;
+}
+
+footer{
+    position: absolute;     
+    z-index: 10;
+}
+
+
+
+
+

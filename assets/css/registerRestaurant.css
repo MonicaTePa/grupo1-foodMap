@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Monserrat', sans-serif;
+}
+
+body{
+    max-width: 100%;
+    background-image: url("/img/imgRegister/fondo.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+header{
+    background-color: #EDA537;
+    display: flex;
+    justify-content: space-around;
+}
+
+#img1{
+    margin-top: 5px;
+    width: 110px;
+}
+
+nav{
+    background-color: #DE6E2F;
+    color: #F4EDDA;
+    height: 100px;
+    font-size: 13px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.list1 ul li:hover{
+    background-color: rgb(240, 168, 55, 0.5);
+    border-radius: 5px;
+}
+
+ul{
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+li{
+    padding: 5px;
+    float: left;
+}
+
+.li1{
+    color: white;
+}
+
+.custombtn{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+    border: none;
+    margin-top: 30px;
+    padding-top: 14px;
+    padding-left: 8px;
+    border-radius: 5px;
+    border: 2px #DE6E2F solid;
+}
+
+.custombtn:hover{
+    background: #DE6E2F;
+}
+
+.btn1{
+    font-size: 15px;
+    color:#F4EDDA;
+}
+.btn2{
+    margin-top: -8px;
+    padding: 2px;
+}
+
+.img2{
+    width: 30px;
+}
+
+#container{
+    width: 1300px;
+    height: 972px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.restaurantImage{
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px;
+}
+
+.restaurantImage img{
+    width: 600px;
+    height: 500px;
+    margin-left: 200px;
+    border-radius: 20px;
+    background-image: url("/img/imgRegister/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 20px 0px 0px 20px;
+    background-position: bottom;
+}
+
+.restaurantImage div{
+    width: 600px;
+    height: 500px;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/imgRegister/logo.jpg");
+    background-size: 270%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.restaurantImage h2{
+    animation-duration: 3s;
+    animation-name: slidein3;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 45px;
+    color: #F4EDDA;
+    text-align: center;
+}
+
+.loginAsRestaurant{
+    width: 660px;
+}
+
+.loginAsRestaurant h2{
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.loginAsRestaurant input{
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    transition: all 2s ease;
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+
+.loginAsRestaurant input:hover{
+    border-bottom: 1px solid black;
+}
+
+.form-control-lg{
+    outline: none;
+}
+
+.loginAsRestaurant button{
+    background-color: #de6e2f;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 60px;
+}
+
+.containerButtons button{
+    width: 100px;
+    height: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    transition: all 1s ease;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+button:hover{
+    background: #de6e2f !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+
+.containerButtons #buttonLogin{
+    background-color: #eda537;
+    border-radius: 2px;
+}
+
+.headlogo{
+    margin-left: 150px;
+}
+
+.text1{
+    color: #F4EDDA;
+    padding-left: 35px;
+}
+
+.container3{
+    margin-top: -90px;
+    margin-left: 900px;
+    padding-right: 10px;
+}
+
+.img6{
+    padding-top: 15px;
+    width: 180px;
+    height: 180px;
+}
+
+
+footer{
+    width: 97%;
+    height: 190px;
+    margin-left: 30px;
+    background-color: #DE6E2F;
+    position: absolute;
+    color: #F4EDDA;
+    border-radius: 2px;
+}
+
+               
+@keyframes slidein{
+    from{
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to{
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+@keyframes slidein2{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }    
+}
+
+@keyframes slidein3{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }    
+}
