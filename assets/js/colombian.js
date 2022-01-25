@@ -1,13 +1,13 @@
 let restaurant = new Restaurant;
-restaurant.setName("Mis carnes parrilla");
-restaurant.setCategory("fastFood");
-restaurant.setImage("./img/mis-carnes.jpg");
-restaurant.setScore(6.5);
-restaurant.setFavorite("humberguesas, parrilla");
+restaurant.setName("Cocidos con sabor");
+restaurant.setCategory("colombian");
+restaurant.setImage("./img/colombian.jpg");
+restaurant.setScore(9.7);
+restaurant.setFavorite("Sopas y sudados");
 
 
-let category = new Category("fast-food");
-category.setTitle("Comida rápida");
+let category = new Category("colombian");
+category.setTitle("Típica colombiana");
 for (let index=0; index<20; index++){
     category.AddRestaurant(restaurant);
 }
@@ -19,4 +19,7 @@ let documentMain = document.querySelector('main');
 let documentFooter = document.querySelector('footer');
 let mainHeight = documentMain.offsetHeight + 50;
 documentFooter.style.marginTop = mainHeight.toString() + "px";
+
+
+
 
