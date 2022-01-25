@@ -6,6 +6,7 @@ restaurant.setScore(6.5);
 restaurant.setFavorite("Buffet a la carta");
 
 
+
 let category = new Category("buffet");
 category.setTitle("Buffets");
 for (let index=0; index<20; index++){
